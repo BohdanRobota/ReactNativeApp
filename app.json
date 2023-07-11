@@ -11,6 +11,15 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-66atc3o2x4zs0mz8.us.auth0.com",
+          "customScheme": "mynewschema"
+        }
+      ]
+    ],
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -21,7 +30,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.auth0.robota"
     },
     "web": {
       "favicon": "./assets/favicon.png"
