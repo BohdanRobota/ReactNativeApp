@@ -12,6 +12,11 @@ const styles = StyleSheet.create({
     marginTop: 'auto',
     width: '100%',
   },
+  container: {
+    height: 500,
+    width: '100%',
+    marginBottom: 30
+  }
 });
 
 export default styles;
