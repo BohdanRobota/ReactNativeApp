@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { SPACING } from '../constants';
+import { COLORS, FONTSIZE, SPACING } from '../constants';
 
 const styles = StyleSheet.create({
   screenContainer: {
@@ -16,6 +16,11 @@ const styles = StyleSheet.create({
     height: 500,
     width: '100%',
     marginBottom: 30
+  },
+  text: {
+    color: COLORS.white,
+    fontSize: FONTSIZE.size_16
+
   }
 });
 

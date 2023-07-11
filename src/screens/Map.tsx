@@ -6,11 +6,10 @@ import { Button } from '../components/Button';
 import { Screen } from '../enums/navigator.enum';
 import styles from '../styles/common.style';
 import Mapbox from '@rnmapbox/maps';
+import { MAPBOX_TOKEN } from 'react-native-dotenv';
 
 Mapbox.setWellKnownTileServer('Mapbox');
-Mapbox.setAccessToken(
-  '<pk.eyJ1IjoiYm9oZGFucm9ib3RhIiwiYSI6ImNsanh0MzhlajE1Y3kzZ3Fpc3ZzbTAwY3EifQ.nr8PpCO0liiefxTl7Ubs4A>',
-);
+Mapbox.setAccessToken(MAPBOX_TOKEN);
 
 type MapScreenProps = NativeStackScreenProps<PrivateStackParamList, Screen.MAP>;
 

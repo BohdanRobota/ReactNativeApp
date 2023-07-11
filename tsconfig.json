@@ -1,5 +1,9 @@
 {
   "extends": "expo/tsconfig.base",
+  "baseUrl": ".",
+  "paths": {
+    "@env": ["node_modules/react-native-dotenv"]
+  },
   "compilerOptions": {
     "strict": true
   }

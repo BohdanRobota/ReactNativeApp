@@ -6,6 +6,7 @@ import { Button } from '../components/Button';
 import { Screen } from '../enums/navigator.enum';
 import { COLORS, FONTSIZE, Logo, SPACING } from '../constants';
 import { useAuth0 } from 'react-native-auth0';
+import { AUTH0_SCHEMA } from 'react-native-dotenv';
 
 type HomeScreenProps = NativeStackScreenProps<PrivateStackParamList, 'Home'>;
 
@@ -19,7 +20,7 @@ const Home: React.FC<HomeScreenProps> = ({ navigation }) => {
   };
   const onLogout = async () => {
     try {
-      await clearSession({ customScheme: 'mynewschema' });
+      await clearSession({ customScheme: AUTH0_SCHEMA });
     } catch (e) {
       console.log('Log out cancelled');
     }
